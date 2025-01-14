@@ -11,4 +11,4 @@ A simple weather and temperature app that can help users to see the latest weath
 * Build a reusable component in ```React```
 
 ## Note
-* The app will not be connected to an API for live date updates, and instead will be using ```locations.json``` file to use as the data source.
+* The app is not connected to an API for live date updates, and instead will be using ```locations.json``` file as the data source.
