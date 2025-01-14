@@ -1,6 +1,5 @@
-// src/components/WeatherDisplay/WeatherDisplay.js
-import React from 'react';
-import './WeatherDisplay.css';
+import React from 'react'
+import './WeatherDisplay.css'
 
 const WeatherDisplay = ({ city, temperature, weather }) => {
     return (
@@ -8,7 +7,7 @@ const WeatherDisplay = ({ city, temperature, weather }) => {
             <h2 className="city">{city}</h2>
             <p className="weather-info">{temperature} - {weather}</p>
         </div>
-    );
-};
+    )
+}
 
-export default WeatherDisplay;
+export default WeatherDisplay

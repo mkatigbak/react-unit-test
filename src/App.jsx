@@ -1,20 +1,19 @@
-// src/App.jsx
-import React, { useEffect, useState } from 'react';
-import WeatherDisplay from './components/WeatherDisplay/WeatherDisplay';
-import './App.css';
-import locationsData from './locations.json';
+import React, { useEffect, useState } from 'react'
+import WeatherDisplay from './components/WeatherDisplay/WeatherDisplay'
+import './App.css'
+import locationsData from './locations.json'
 
 function App() {
-    const [locations, setLocations] = useState([]);
-    const [searchTerm, setSearchTerm] = useState('');
+    const [locations, setLocations] = useState([])
+    const [searchTerm, setSearchTerm] = useState('')
 
     useEffect(() => {
-        setLocations(locationsData);
-    }, []);
+        setLocations(locationsData)
+    }, [])
 
     const filteredLocations = locations.filter(location =>
         location.city.toLowerCase().includes(searchTerm.toLowerCase())
-    );
+    )
 
     return (
         <div className="app">
@@ -35,7 +34,7 @@ function App() {
                 />
             ))}
         </div>
-    );
+    )
 }
 
-export default App;
+export default App
