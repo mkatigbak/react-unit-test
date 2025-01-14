@@ -1,11 +1,13 @@
+import React from 'react'
+import './WeatherDisplay.css'
 
-
-function WeatherDisplay() {
+const WeatherDisplay = ({city, temperature, weather}) => {
     
     
     return (
-        <div>
-            <h1>Displaying Weather</h1>
+        <div className='weather-display'>
+            <h2 className='city'>{city}</h2>
+            <p className='weather-info'>{temperature} - {weather}</p>
         </div>
     )
 }
