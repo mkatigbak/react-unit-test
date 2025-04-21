@@ -10,4 +10,4 @@ const WeatherDisplay = ({ city, temperature, weather }) => {
     )
 }
 
-export default WeatherDisplay
+export default React.memo(WeatherDisplay)
